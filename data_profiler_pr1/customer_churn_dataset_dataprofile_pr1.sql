@@ -1,0 +1,51 @@
+-- Customer Churn Dataset SQL File
+-- Rows: 31 | Columns: 13
+
+CREATE TABLE IF NOT EXISTS `customer_churn` (
+  `Customer_ID` INT,
+  `Age` INT,
+  `Gender` VARCHAR(255),
+  `City` VARCHAR(255),
+  `Purchase_Frequency` VARCHAR(255),
+  `Total_Purchases` INT,
+  `Average_Order_Value` DECIMAL(18,4),
+  `Days_Since_Last_Purchase` INT,
+  `Support_Tickets` DECIMAL(18,4),
+  `Discount_Used` VARCHAR(255),
+  `Payment_Method` VARCHAR(255),
+  `Churn` VARCHAR(255),
+  `Source` VARCHAR(255)
+);
+
+INSERT INTO `customer_churn` (`Customer_ID`, `Age`, `Gender`, `City`, `Purchase_Frequency`, `Total_Purchases`, `Average_Order_Value`, `Days_Since_Last_Purchase`, `Support_Tickets`, `Discount_Used`, `Payment_Method`, `Churn`, `Source`) VALUES
+(1001, 24, 'Male', 'Surat', 'Monthly', 3, 1850, 12, 1, 'No', 'UPI', 'No', 'CSV'),
+(1002, 31, 'Female', 'Mumbai', 'Weekly', 18, 2450, 5, 0, 'Yes', 'Card', 'No', 'CSV'),
+(1003, 45, 'Male', 'Delhi', 'Rarely', 2, 950, 120, 4, 'No', 'Cash', 'Yes', 'CSV'),
+(1004, 28, 'Female', 'Pune', 'Monthly', 7, 1750, 35, 1, 'Yes', 'UPI', 'No', 'CSV'),
+(1005, 52, 'Male', 'Ahmedabad', 'Rarely', 1, 700, 180, 5, 'No', 'Cash', 'Yes', 'CSV'),
+(1006, 36, 'Female', 'Bengaluru', 'Weekly', 22, 3200, 3, 0, 'Yes', 'Card', 'No', 'CSV'),
+(1007, 29, 'Male', 'Surat', 'Monthly', 9, 2100, 28, NULL, 'Yes', 'UPI', 'No', 'CSV'),
+(1008, 41, 'Female', 'Jaipur', 'Rarely', 3, 1100, 95, 3, 'No', 'Card', 'Yes', 'CSV'),
+(1009, 23, 'Male', 'Pune', 'Weekly', 15, 1950, 7, 0, 'Yes', 'UPI', 'No', 'JSON'),
+(1010, 48, 'Female', 'Delhi', 'Rarely', 2, 850, 150, 4, 'No', 'Cash', 'Yes', 'JSON'),
+(1011, 34, 'Male', 'Mumbai', 'Monthly', 8, 2650, 22, 1, 'Yes', 'Card', 'No', 'JSON'),
+(1012, 27, 'Female', 'Surat', 'Weekly', 20, 2300, 4, 0, 'Yes', 'UPI', 'No', 'JSON'),
+(1013, 39, 'Male', 'Ahmedabad', 'Monthly', 6, 1400, 45, 2, 'No', 'UPI', 'No', 'JSON'),
+(1014, 55, 'Female', 'Delhi', 'Rarely', 1, 650, 210, 6, 'No', 'Cash', 'Yes', 'JSON'),
+(1015, 30, 'Male', 'Bengaluru', 'Weekly', 25, 3500, 2, 0, 'Yes', 'Card', 'No', 'JSON'),
+(1016, 43, 'Female', 'Pune', 'Monthly', 5, NULL, 60, 2, 'No', 'UPI', 'Yes', 'SQL'),
+(1017, 26, 'Male', 'Surat', 'Monthly', 10, 1900, 18, 1, 'Yes', 'UPI', 'No', 'SQL'),
+(1018, 37, 'Female', 'Mumbai', 'Weekly', 16, 2850, 6, 0, 'Yes', 'Card', 'No', 'SQL'),
+(1019, 50, 'Male', 'Jaipur', 'Rarely', 2, 900, 135, 5, 'No', 'Cash', 'Yes', 'SQL'),
+(1020, 32, 'Female', 'Ahmedabad', 'Monthly', 7, 1700, 40, 1, 'Yes', 'UPI', 'No', 'SQL'),
+(1021, 46, 'Male', 'Delhi', 'Rarely', 3, 1050, 110, 3, 'No', 'Card', 'Yes', 'SQL'),
+(1022, 25, 'Female', 'Surat', 'Weekly', 19, 2200, 8, 0, 'Yes', 'UPI', 'No', 'SQL'),
+(1023, 35, 'Male', 'Pune', 'Monthly', 6, 1600, 52, 2, NULL, 'Card', 'No', 'API'),
+(1024, 58, 'Female', 'Mumbai', 'Rarely', 1, 600, 240, 7, 'No', 'Cash', 'Yes', 'API'),
+(1025, 29, 'Male', 'Bengaluru', 'Weekly', 21, 3100, 4, 0, 'Yes', 'Card', 'No', 'API'),
+(1026, 40, 'Female', 'Jaipur', 'Monthly', 8, 1850, 30, 1, 'Yes', 'UPI', 'No', 'API'),
+(1027, 33, 'Male', 'Ahmedabad', 'Monthly', 5, 1250, 70, 3, 'No', 'UPI', 'Yes', 'API'),
+(1028, 47, 'Female', 'Delhi', 'Rarely', 2, 780, 165, 4, 'No', 'Cash', 'Yes', 'API'),
+(1029, 22, 'Male', 'Surat', 'Weekly', 14, 1800, 9, 0, 'Yes', 'UPI', 'No', 'API'),
+(1030, 38, 'Female', 'Pune', 'Monthly', 9, 2150, 25, 1, 'Yes', 'Card', 'No', 'API'),
+(1003, 45, 'Male', 'Delhi', 'Rarely', 2, 950, 120, 4, 'No', 'Cash', 'Yes', 'CSV');
